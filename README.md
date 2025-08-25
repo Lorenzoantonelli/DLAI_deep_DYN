@@ -62,7 +62,7 @@ chmod +x run_all_experiments.sh
 Baseline models:
 
 ```
-uv run src/train_baseline.py -h  # show all option
+uv run src/train_baseline.py -h  # show all options
 ```
 
 There are also two predefined training scripts for the baselines, that you can run with:
