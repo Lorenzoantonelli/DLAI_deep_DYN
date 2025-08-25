@@ -1,4 +1,4 @@
-# deep_DYN
+# DLAI_deep_DYN
 
 DLAI 2025 project: DYN Audio Representation for Efficient Learning and Inference.
 
@@ -32,8 +32,8 @@ Training and testing scripts are located directly in the `src/` folder.
 ### 2. Clone the repository
 
 ```bash
-git clone <REPO_URL>
-cd [PLACEHOLDER]
+git clone https://github.com/Lorenzoantonelli/DLAI_deep_DYN.git
+cd DLAI_deep_DYN
 ```
 
 ### 3. Install dependencies
@@ -46,7 +46,7 @@ uv sync --frozen
 
 ### 4. Download the checkpoints
 
-Checkpoints are available in this folder: [PLACEHOLDER]. Download them into the Checkpoints/ folder.
+Checkpoints are available in this folder: [download](https://drive.google.com/drive/folders/18LOJ82B2k1FF8OExjHydlnBbL_xDedh4?usp=sharing). Download them into the Checkpoints/ folder.
 
 ### 5. Run the tests
 
