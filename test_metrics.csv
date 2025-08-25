@@ -1,0 +1,12 @@
+model                         , variant    , checkpoint_key                , checkpoint_file                         , pesq    , stoi    , pesq_count, stoi_count, num_batches
+DualStreamCAE                 , waveform   , dual_waveform_1               , dual_waveform_1_waveform.pt             , 2.903704, 0.950930,       2620,       2620,         164
+DualStreamCAE                 , sample_gain, dual_waveform_1               , dual_waveform_1_waveform_sample_gain.pt , 2.924147, 0.950058,       2620,       2620,         164
+DualStreamCAESharedEncoder    , waveform   , shared_encoder_2              , shared_encoder_2_waveform.pt            , 3.011038, 0.955719,       2620,       2620,         164
+DualStreamCAESharedEncoder    , sample_gain, shared_encoder_2              , shared_encoder_2_waveform_sample_gain.pt, 2.917188, 0.952574,       2620,       2620,         164
+DualStreamCAE_ShareEncDec     , waveform   , all_shared_3                  , all_shared_3_waveform.pt                , 1.024629, 0.441407,       2620,       2620,         164
+DualStreamCAE_ShareEncDec     , sample_gain, all_shared_3                  , all_shared_3_waveform_sample_gain.pt    , 1.043362, 0.474214,       2620,       2620,         164
+DualStreamCAE_TwoEnc_DirectX  , n/a        , dual_encoder_waveform_only_4  , dual_encoder_waveform_only_4.pt         , 2.934330, 0.948511,       2620,       2620,         164
+DualStreamCAE_ShareEnc_DirectX, n/a        , shared_encoder_waveform_only_5, shared_encoder_waveform_only_5.pt       , 2.982852, 0.950398,       2620,       2620,         164
+BaselineCAE_16bit             , n/a        , baseline_16bit_6              , baseline_16bit_6.pt                     , 3.003906, 0.952700,       2620,       2620,         164
+BaselineCAE_16bit_L1          , n/a        , baseline_16bit_6_l1           , baseline_16bit_6_l1.pt                  , 2.383820, 0.931393,       2620,       2620,         164
+BaselineCAE_8bit              , n/a        , baseline_8bit_7               , baseline_8bit_7.pt                      , 2.897322, 0.951673,       2620,       2620,         164

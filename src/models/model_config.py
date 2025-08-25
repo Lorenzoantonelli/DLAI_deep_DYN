@@ -1,0 +1,5 @@
+KERNEL_SIZE: int = 15
+STRIDE: int = 2
+PADDING: int = 7
+OUTPUT_PADDING: int = 1
+LEAKY_RELU_SLOPE: float = 0.2
