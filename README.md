@@ -52,9 +52,15 @@ Checkpoints are available in this folder: [download](https://drive.google.com/dr
 
 Run all evaluation scripts and save results to a CSV (customize `file_name` in the script if needed):
 
+Linux/macOS:
 ```bash
 chmod +x run_all_experiments.sh
 ./run_all_experiments.sh
+```
+
+Windows:
+```bash
+.\run_all_experiments.bat
 ```
 
 ### 6. Train a model
