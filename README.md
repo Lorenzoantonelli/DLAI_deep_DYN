@@ -25,6 +25,16 @@ Training and testing scripts are located directly in the `src/` folder.
 
 ## Installation and Setup
 
+> [!WARNING]  
+> You may see a warning when loading the dataset with torchaudio **2.8.0**:
+>
+> _"UserWarning: In 2.9, this function's implementation will be changed to use `torchaudio.load_with_torchcodec` under the hood. Some parameters like `normalize`, `format`, `buffer_size`, and `backend` will be ignored. We recommend that you port your code to rely directly on TorchCodec's decoder instead."_
+>
+> This warning comes from **`torchaudio.datasets.LIBRISPEECH`** itself and cannot be disabled in the dataset wrapper.  
+> The issue is tracked here: [pytorch/audio#3902](https://github.com/pytorch/audio/issues/3902).
+>
+> The scripts in this repository work fine with **torchaudio 2.7.1** and **2.8.0** despite the warning, it will probably work with version **2.9.0** as well.
+
 ### 1. Prerequisites
 
 - **uv:** This project uses `uv` for fast dependency management. Install it following the instructions at [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/).
@@ -53,12 +63,14 @@ Checkpoints are available in this folder: [download](https://drive.google.com/dr
 Run all evaluation scripts and save results to a CSV (customize `file_name` in the script if needed):
 
 Linux/macOS:
+
 ```bash
 chmod +x run_all_experiments.sh
 ./run_all_experiments.sh
 ```
 
 Windows:
+
 ```bash
 .\run_all_experiments.bat
 ```
