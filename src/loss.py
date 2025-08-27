@@ -21,9 +21,6 @@ class CombinedAudioLoss(nn.Module):
             perceptual_weighting=True,
         )
 
-        self.add_module("_sisdr_mod", self.sisdr)
-        self.add_module("_mrstft_mod", self.mrstft)
-
     def forward(self, y_true: torch.Tensor, y_pred: torch.Tensor) -> torch.Tensor:
         stft_loss = self.mrstft(y_pred, y_true)
         sisdr_loss = self.sisdr(y_pred, y_true)
